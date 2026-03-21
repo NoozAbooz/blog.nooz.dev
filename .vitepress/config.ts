@@ -24,8 +24,8 @@ export default withMermaid({
     nav: [
       { text: 'Home', link: '/' },
 	  { text: 'Blog', link: '/blog/!Index.md' },
+	  { text: 'Guides', link: '/guides/!Index.html' },
       { text: 'Projects', link: '/projects/!Index.md' },
-      { text: 'Guides', link: '/guides/!Index.html' },
       { text: 'Study', link: '/study/!Index.md' },
     ],
     sidebar,
