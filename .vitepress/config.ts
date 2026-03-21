@@ -2,6 +2,9 @@ import sidebar from './sidebar.ts'
 import { withMermaid } from "vitepress-plugin-mermaid";
 
 export default withMermaid({
+  head: [
+	['link', { rel: 'icon', href: '/favicon.ico' }],
+  ],
   vite: {
     optimizeDeps: { include: ['@braintree/sanitize-url'] },
     resolve: {

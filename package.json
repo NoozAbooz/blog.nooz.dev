@@ -1,9 +1,9 @@
 {
   "type": "module",
   "scripts": {
-    "docs:dev": "vitepress dev",
-    "docs:build": "git fetch --depth=10000 && vitepress build docs",
-    "docs:preview": "vitepress preview"
+    "dev": "vitepress dev",
+    "build": "git fetch --depth=10000 && vitepress build",
+    "preview": "vitepress preview"
   },
   "dependencies": {
     "@catppuccin/vitepress": "^0.1.2",
