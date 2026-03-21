@@ -1,0 +1,15 @@
+{
+  "type": "module",
+  "scripts": {
+    "docs:dev": "vitepress dev",
+    "docs:build": "git fetch --unshallow && vitepress build docs",
+    "docs:preview": "vitepress preview"
+  },
+  "dependencies": {
+    "@catppuccin/vitepress": "^0.1.2",
+    "@mermaid-js/mermaid-mindmap": "^9.3.0",
+    "mermaid": "^11.13.0",
+    "vitepress-plugin-mermaid": "^2.0.17",
+    "vue": "^3.5.30"
+  }
+}
