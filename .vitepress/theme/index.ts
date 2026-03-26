@@ -6,7 +6,9 @@ export default {
 	...DefaultTheme,
 	enhanceApp() {
 		if (!import.meta.env.SSR) {
-			inject();
+			inject({
+				mode: import.meta.env.MODE === 'development' ? 'development' : 'production',
+			});
 		}
 	},
 };
