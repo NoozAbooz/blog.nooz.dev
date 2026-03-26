@@ -8,6 +8,7 @@
   "dependencies": {
     "@catppuccin/vitepress": "^0.1.2",
     "@mermaid-js/mermaid-mindmap": "^9.3.0",
+    "@vercel/analytics": "^2.0.1",
     "mermaid": "^11.13.0",
     "vitepress-plugin-mermaid": "^2.0.17",
     "vue": "^3.5.30"

@@ -3,7 +3,7 @@ layout: home
 
 hero:
   name: "The Bibliotheca"
-  tagline: "I write when I feel like it"
+  tagline: "Not a library"
   actions:
     - theme: brand
       text: Blog
