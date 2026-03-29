@@ -3,7 +3,7 @@ import { withMermaid } from "vitepress-plugin-mermaid";
 
 export default withMermaid({
   head: [
-	['link', { rel: 'icon', href: '/favicon-alt.ico' }],
+	['link', { rel: 'icon', href: '/doraemon.ico' }], // set favicon
   ],
   vite: {
     optimizeDeps: { include: ['@braintree/sanitize-url'] },
