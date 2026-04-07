@@ -1,6 +1,6 @@
-import fs from 'node:fs'
-import path from 'node:path'
-import { fileURLToPath } from 'node:url'
+import fs from 'fs'
+import path from 'path'
+import { fileURLToPath } from 'url'
 
 const { resolve } = path
 const baseDir = path.dirname(fileURLToPath(import.meta.url))
@@ -52,12 +52,12 @@ export const getMsg = (dirPath, basePath) => {
                 const subPathName = basePath ? `${basePath}/${item}` : item
                 const subItems = getMsg(fullPath, subPathName)
                 
-                // Check if there's an Index.md file in the directory
+                // Check if there's an index.md file in the directory
                 const hasIndex = fs.existsSync(resolve(fullPath, 'index.md')) || fs.existsSync(resolve(fullPath, 'Index.md'))
                 
                 return {
                     text: item,
-                    link: hasIndex ? `/${subPathName}/Index` : undefined,
+                    link: hasIndex ? `/${subPathName}/` : undefined,
                     items: subItems,
                     collapsible: true,
                 }
