@@ -3,6 +3,7 @@ title: Writing Vitepress Blogs
 ---
 
 This is a reference document (intended for myself) for Vitepress markdown syntax.
+More features here: https://vitepress.dev/guide/markdown and https://docs.transor.io/demo.html
 
 ## Callouts
 
@@ -56,7 +57,7 @@ This is a details block.
 
 ## Code Blocks
 
-```js{1,4,6-8}
+```js:line-numbers {1,4,6-8}
 export default { // Highlighted
   data () {
     return {
@@ -71,7 +72,7 @@ export default { // Highlighted
 ```
 
 ```
-```js{1,4,6-8}
+```js:line-numbers {1,4,6-8}
 export default { // Highlighted
   data () {
     return {
@@ -84,7 +85,7 @@ export default { // Highlighted
 ```js
 export default {
   data() {
-    return {
+    return { // [!code focus]
       msg: "Error", // [!code error]
       msg: "Warning", // [!code warning]
     };
@@ -94,15 +95,8 @@ export default {
 
 ```
 ```js
+return { // [!code focus]
     msg: "Error", // [!code error]
     msg: "Warning", // [!code warning]
 ...
 ```
-```
-
-## Badges
-
-### Title <Badge type="info" text="default" />
-### Title <Badge type="tip" text="^1.9.0" />
-### Title <Badge type="warning" text="beta" />
-### Title <Badge type="danger" text="caution" />
