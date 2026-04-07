@@ -2,9 +2,7 @@ import sidebar from './sidebar.ts'
 import { withMermaid } from "vitepress-plugin-mermaid";
 
 export default withMermaid({
-  head: [
-	['link', { rel: 'icon', href: '/favicon.ico' }], // set favicon
-  ],
+  head: [['link', { rel: 'icon', href: '/favicon.ico' }]],
   vite: {
     optimizeDeps: { include: ['@braintree/sanitize-url'] },
     resolve: {
@@ -13,9 +11,10 @@ export default withMermaid({
       },
     },
   },
-  title: "Blog | nooz.dev",
-  description: 'I write when I feel like it',
+  title: "blog.nooz.dev",
+  description: 'Next update soon™',
   base: '/',
+  cleanUrls: true,
   lastUpdated: true,
   themeConfig: {
     markdown: {
@@ -26,10 +25,10 @@ export default withMermaid({
     },
     nav: [
       { text: 'Home', link: '/' },
-	  { text: 'Blog', link: '/blog/!Index.md' },
-	  { text: 'Guides', link: '/guides/!Index.html' },
-      { text: 'Projects', link: '/projects/!Index.md' },
-      { text: 'Study', link: '/study/!Index.md' },
+	  { text: 'Blog', link: '/blog/' },
+	  { text: 'Guides', link: '/guides/' },
+      { text: 'Projects', link: '/projects/' },
+      { text: 'Study', link: '/study/' },
     ],
     sidebar,
     search: {
