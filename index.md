@@ -2,26 +2,26 @@
 layout: home
 
 hero:
-  name: "The Bibliotheca"
-  tagline: "Not a library"
+  name: "Bibliotheca"
+  tagline: "Next update soon™"
   actions:
     - theme: brand
       text: Blog
-      link: /blog/!Index.md
+      link: /blog/
     - theme: alt
       text: Guides
-      link: /guides/!Index.md
+      link: /guides/
   image:
     src: /img/nooz.svg
     alt: VitePress
 features:
   - icon: 🛠️
     title: Simple and minimal
-    details: in the looks but not the content 😵‍💫
+    details: in design only.
   - icon: 📖
-    title: Study resources
-    details: so that I can procrastinate actually studying
+    title: Curated study resources
+    details: to procrastinate studying with.
   - icon: 🚧
     title: Always improving
-    details: in the wrong direction
+    details: in the wrong direction.
 ---

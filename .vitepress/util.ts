@@ -1,31 +1,50 @@
-import fs from 'fs'
-import path from 'path'
-const { resolve } = path
+import fs from 'node:fs'
+import path from 'node:path'
+import { fileURLToPath } from 'node:url'
 
-export const scanDir = pathName => {
-    const path = resolve(__dirname, `../${pathName}`)
-    return getMsg(path, pathName)
+const { resolve } = path
+const baseDir = path.dirname(fileURLToPath(import.meta.url))
+
+const getTitleFromFrontmatter = filePath => {
+    const content = fs.readFileSync(filePath, 'utf8')
+    const frontmatterMatch = content.match(/^---\s*[\r\n]+([\s\S]*?)\n---\s*(?:[\r\n]|$)/)
+
+    if (!frontmatterMatch) {
+        return path.parse(filePath).name
+    }
+
+    const titleMatch = frontmatterMatch[1].match(/^title:\s*(.+)$/m)
+
+    if (!titleMatch) {
+        return path.parse(filePath).name
+    }
+
+    return titleMatch[1].trim().replace(/^['"]|['"]$/g, '')
 }
 
-export const getMsg = (path, basePath) => {
-    let res = fs.readdirSync(path).filter(item => !(String(item) === '.DS_Store'))
+export const scanDir = pathName => {
+    const dirPath = resolve(baseDir, `../${pathName}`)
+    return getMsg(dirPath, pathName)
+}
+
+export const getMsg = (dirPath, basePath) => {
+    let res = fs.readdirSync(dirPath).filter(item => !(String(item) === '.DS_Store'))
     if (res) {
         let arr = res.map(item => {
-            const fullPath = resolve(path, item)
+            const fullPath = resolve(dirPath, item)
             const isDirectory = fs.statSync(fullPath).isDirectory()
 
             if (String(item).endsWith('.md')) {
-                // Extract file name without extension
-                const fileName = item.split('.')[0]
-
-                // Skip Index.md files as they will be handled by their parent directory
-                if (fileName === 'Index') {
+                const fileName = path.parse(item).name
+                if (fileName.toLowerCase() === 'index') {
                     return null
                 }
 
+                const text = getTitleFromFrontmatter(fullPath)
+
                 // Create the correct link path directly
                 return {
-                    text: fileName,
+                    text,
                     link: `/${basePath}/${fileName}`
                 }
             } else if (isDirectory && item !== 'images' && !item.startsWith('.')) {
@@ -34,8 +53,7 @@ export const getMsg = (path, basePath) => {
                 const subItems = getMsg(fullPath, subPathName)
                 
                 // Check if there's an Index.md file in the directory
-                const indexPath = resolve(fullPath, 'Index.md')
-                const hasIndex = fs.existsSync(indexPath)
+                const hasIndex = fs.existsSync(resolve(fullPath, 'index.md')) || fs.existsSync(resolve(fullPath, 'Index.md'))
                 
                 return {
                     text: item,
