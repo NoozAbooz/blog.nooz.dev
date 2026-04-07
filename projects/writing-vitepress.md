@@ -1,3 +1,7 @@
+---
+title: Writing Vitepress Blogs
+---
+
 This is a reference document (intended for myself) for Vitepress markdown syntax.
 
 ## Callouts

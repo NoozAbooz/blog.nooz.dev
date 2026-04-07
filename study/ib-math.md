@@ -1,3 +1,7 @@
+---
+title: IB Math AA HL
+---
+
 # Math Analysis and Approaches - Higher Level
 
 ::: tip

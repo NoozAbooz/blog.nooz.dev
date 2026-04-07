@@ -1,3 +1,7 @@
+---
+title: Recover Lost Tab Inputs
+---
+
 # Recover Lost Tab Inputs
 
 > [!INFO] 

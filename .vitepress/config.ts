@@ -11,7 +11,7 @@ export default withMermaid({
       },
     },
   },
-  title: "blog.nooz.dev",
+  title: "Blog | nooz.dev",
   description: 'Next update soon™',
   base: '/',
   cleanUrls: true,

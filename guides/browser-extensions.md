@@ -1,4 +1,8 @@
-# Personal Reccomended Browser Extensions
+---
+title: Browser Extension Reccomendations
+---
+
+# Browser Extension Reccomendations
 
 In the spirit of my previous post, I thought it would be fun to share some of my favorite browser extensions that I use on a daily basis. These extensions are compatible with Chromium derivatives (like Google Chrome and Microsoft Edge) and Firefox, so you can easily find them in your browser's extension store.
 
