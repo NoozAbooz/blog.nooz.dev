@@ -16,6 +16,9 @@ export default withMermaid({
   base: '/',
   cleanUrls: true,
   lastUpdated: true,
+  markdown: {
+    math: true
+  },
   themeConfig: {
     markdown: {
       theme: {
