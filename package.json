@@ -12,5 +12,8 @@
     "mermaid": "^11.13.0",
     "vitepress-plugin-mermaid": "^2.0.17",
     "vue": "^3.5.30"
+  },
+  "devDependencies": {
+    "markdown-it-mathjax3": "^4.3.2"
   }
 }
