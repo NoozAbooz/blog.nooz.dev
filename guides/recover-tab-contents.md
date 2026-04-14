@@ -1,8 +1,8 @@
 ---
-title: Recover Lost Tab Contents
+title: Recover Deleted Tab Contents
 ---
 
-# Recover Lost Tab Contents
+# Recover Deleted Tab Contents with Browser Hex Editing
 
 > [!NOTE]
 > This method has only been tested on Chromium-based browsers within Windows 10 / 11.
@@ -15,12 +15,14 @@ on a long essay assignment, and you accidentally close the tab, along with the h
 
 When this happened to me, I stumbled upon the above Reddit post and managed to recover the form inputs I had made. This post follows the same steps, but with slightly revised instructions and accompanying screenshots.
 
-## Step 1
+![Final result](https://cdn.hackclub.com/019d893e-91d9-7162-8818-47fdfdd7eb20/paste-1776124072201.png "Final result" =600x)
+
+## 1. Prerequisites
 Download the HxD Hex Editor from https://mh-nexus.de/en/hxd/ (download the latest Win10 version)
 ![download page](https://cdn.hackclub.com/019d892e-5f45-73a6-ae7c-41ef2a14b7b5/paste-1776123010525.png)
 - On the next page, click "Download per HTTPS" for your language
 
-## Step 2
+## 2. Using HxD
 <Gallery 
   :images="[
     'https://cdn.hackclub.com/019d8933-4697-704b-b558-840ba29c3ad0/paste-1776123332021.png',
@@ -32,11 +34,11 @@ Download the HxD Hex Editor from https://mh-nexus.de/en/hxd/ (download the lates
   ]"
 />
 
-## Step 2.5
+## 2.5. Locating process ID
 Look up the steps for your specific browser to open "browser task manager" for your browser and locate your tab
 <Gallery 
   :images="[
-    'https://cdn.hackclub.com/019d8940-6da1-7fcc-8974-10b29d32a032/paste-1776124193918.png',
+    'https://cdn.hackclub.com/019d8940-6da1-7fcc-8974-10b29d32a032/paste-1776124193918.png =400x400',
     'https://cdn.hackclub.com/019d8945-0739-712c-981b-ac517149142b/paste-1776124495543.png',
   ]" 
   :captions="[
@@ -45,13 +47,13 @@ Look up the steps for your specific browser to open "browser task manager" for y
   ]"
 />
 
-## Step 3
+## 3. Searching for lost content
 <Gallery
   :images="[
-	'https://cdn.hackclub.com/019d893c-88da-7239-9e1a-4d2cda9ac02e/paste-1776123938735.png',
+	'https://cdn.hackclub.com/019d893c-88da-7239-9e1a-4d2cda9ac02e/paste-1776123938735.png =500x400',
 	'https://cdn.hackclub.com/019d893d-a5e9-76cf-ab6d-1f8fe67169f1/paste-1776124011791.png',
 	'https://cdn.hackclub.com/019d893e-91d9-7162-8818-47fdfdd7eb20/paste-1776124072201.png',
-	'https://cdn.hackclub.com/019d893f-2ad9-7196-bbaf-062f4aa540e6/paste-1776124111207.png',
+	'https://cdn.hackclub.com/019d893f-2ad9-7196-bbaf-062f4aa540e6/paste-1776124111207.png =500x400',
   ]"
   :captions="[
 	'HxD will load the RAM memory of that browser tab. Go open the search function',
@@ -61,6 +63,6 @@ Look up the steps for your specific browser to open "browser task manager" for y
   ]"
 />
 
-## Step 4
+## Final Result
 Doesn't that final result from HxD look familiar to the text we deleted?
 ![original](https://cdn.hackclub.com/019d8938-5969-7863-9626-db40d3d45510/paste-1776123664340.png)

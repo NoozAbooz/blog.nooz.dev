@@ -37,7 +37,7 @@ export default withMermaid({
           ? defaultImageRenderer(tokens, idx, options, env, self)
           : self.renderToken(tokens, idx, options)
 
-        return `<figure>${imageHtml.replace(/\s+title="[^"]*"/, '')}<figcaption>${md.utils.escapeHtml(caption)}</figcaption></figure>`
+        return `<figure class="md-captioned-image">${imageHtml.replace(/\s+title="[^"]*"/, '')}<figcaption class="md-captioned-image__caption">${md.utils.escapeHtml(caption)}</figcaption></figure>`
       }
     },
     math: true,
