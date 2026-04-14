@@ -4,8 +4,8 @@ date: 2025-01-01
 ---
 
 # Making a VEX Competition Switch
-![image](https://cdn.hackclub.com/019d8988-a34a-7f86-a880-97ca295ad589/paste-1776128925837.png "CAD Render" =600x)
-<Card title="Github Repository" link="https://github.com/NoozAbooz/VEX-Competition-Switch" logo="https://logodix.com/logo/64439.png"/>
+![image](https://cdn.hackclub.com/019d8988-a34a-7f86-a880-97ca295ad589/paste-1776128925837.png "CAD Render" =600x600)
+<Card title="Github Repository" link="https://github.com/NoozAbooz/VEX-Competition-Switch" logo="https://logodix.com/logo/64439.png" />
 
 ## Background
 In 2025, VEX Robotics discontinued their "Competition Switch", which would plug into V5 controllers and simulate having a real Field Controller plugged in. 
@@ -30,7 +30,7 @@ To start, I found the [pinout](https://content.vexrobotics.com/docs/VEXnet%20Com
 
 [This](https://static.rapidonline.com/downloads/vex/Make-Competition-Switch.pdf) also provided helpful details on the corresponding pin numbers and ethernet cable colours.
 
-## Version 0.1 -Single Port Prototype
+## Version 0.1 - Single Port
 To get a feel for the wiring, I designed a prototype in EasyEDA:
 <Gallery 
   :images="[
@@ -43,7 +43,7 @@ To get a feel for the wiring, I designed a prototype in EasyEDA:
   ]"
 />
 
-## Version 1.0 - Duo Port Prototype
+## Version 1.0 - Duo Port
 Knowing that I wanted to recreate the original switch as closely as possible, I designed a second version of the PCB that would support two controllers being connected simultaneously, with standardized holes as to accomodate mounting the PCB to a controller.
 <Gallery 
   :images="[
@@ -77,7 +77,7 @@ I restarted the PCB design from scratch, this time avoiding 90 degree angles in 
   ]"
 />
 
-## Final Product
+## Physical Product
 I ordered through JLCPCB and used their PCBA service. Shoutout to Hack Club for helping offset my costs.
 <Gallery 
   :images="[
