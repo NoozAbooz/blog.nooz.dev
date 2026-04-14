@@ -1,0 +1,1 @@
+declare module '@tlylt/markdown-it-imsize';

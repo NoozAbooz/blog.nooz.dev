@@ -1,5 +1,6 @@
 import sidebar from './sidebar.ts'
 import { withMermaid } from "vitepress-plugin-mermaid";
+import imsize from '@tlylt/markdown-it-imsize'
 
 export default withMermaid({
   head: [['link', { rel: 'icon', href: '/favicon.ico' }]],
@@ -17,7 +18,32 @@ export default withMermaid({
   cleanUrls: true,
   lastUpdated: true,
   markdown: {
-    math: true
+    config: (md) => {
+      md.use(imsize)
+
+      const defaultImageRenderer = md.renderer.rules.image // special system for adding captions to vanilla markdown images
+
+      md.renderer.rules.image = (tokens, idx, options, env, self) => {
+        const token = tokens[idx]
+        const caption = token.attrGet('title')
+
+        if (!caption) {
+          return defaultImageRenderer
+            ? defaultImageRenderer(tokens, idx, options, env, self)
+            : self.renderToken(tokens, idx, options)
+        }
+
+        const imageHtml = defaultImageRenderer
+          ? defaultImageRenderer(tokens, idx, options, env, self)
+          : self.renderToken(tokens, idx, options)
+
+        return `<figure>${imageHtml.replace(/\s+title="[^"]*"/, '')}<figcaption>${md.utils.escapeHtml(caption)}</figcaption></figure>`
+      }
+    },
+    math: true,
+    image: {
+      lazyLoading: true // image lazy loading is disabled by default
+    }
   },
   themeConfig: {
     markdown: {

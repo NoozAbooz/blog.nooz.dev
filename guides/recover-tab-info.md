@@ -17,7 +17,7 @@ When this happened to me, I stumbled upon the above Reddit post and managed to r
 
 ## Step 1
 Download the HxD Hex Editor from https://mh-nexus.de/en/hxd/ (download the latest Win10 version)
-![image](https://cdn.hackclub.com/019d892e-5f45-73a6-ae7c-41ef2a14b7b5/paste-1776123010525.png)
+![download page](https://cdn.hackclub.com/019d892e-5f45-73a6-ae7c-41ef2a14b7b5/paste-1776123010525.png)
 - On the next page, click "Download per HTTPS" for your language
 
 ## Step 2
@@ -63,4 +63,4 @@ Look up the steps for your specific browser to open "browser task manager" for y
 
 ## Step 4
 Doesn't that final result from HxD look familiar to the text we deleted?
-![image](https://cdn.hackclub.com/019d8938-5969-7863-9626-db40d3d45510/paste-1776123664340.png)
+![original](https://cdn.hackclub.com/019d8938-5969-7863-9626-db40d3d45510/paste-1776123664340.png)
