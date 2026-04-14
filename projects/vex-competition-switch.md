@@ -30,7 +30,7 @@ To start, I found the [pinout](https://content.vexrobotics.com/docs/VEXnet%20Com
 
 [This](https://static.rapidonline.com/downloads/vex/Make-Competition-Switch.pdf) also provided helpful details on the corresponding pin numbers and ethernet cable colours.
 
-## Version 0.1
+## Version 0.1 -Single Port Prototype
 To get a feel for the wiring, I designed a prototype in EasyEDA:
 <Gallery 
   :images="[
@@ -43,7 +43,7 @@ To get a feel for the wiring, I designed a prototype in EasyEDA:
   ]"
 />
 
-## Version 1
+## Version 1.0 - Duo Port Prototype
 Knowing that I wanted to recreate the original switch as closely as possible, I designed a second version of the PCB that would support two controllers being connected simultaneously, with standardized holes as to accomodate mounting the PCB to a controller.
 <Gallery 
   :images="[
@@ -58,11 +58,11 @@ Knowing that I wanted to recreate the original switch as closely as possible, I 
   ]"
 />
 
-## Version 1.1
+### Version 1.1 - Flipped Ethernet Ports
 Knowing that a duo variant was feasible without vias, I could make the ethernet jacks face downwards so that a shorter cable could be used. However, I didn't like the tight clearances and awkward angles used here.
 ![Version 1.1](https://github.com/NoozAbooz/VEX-Competition-Switch/raw/master/screenshots/image-6.png "Version 1.1 footprint")
 
-## Version 1.2
+## Version 1.2 - Final Version
 I restarted the PCB design from scratch, this time avoiding 90 degree angles in the traces. I also added labels to the silkscreen layer to indicate all four possible switch positions.
 <Gallery 
   :images="[
@@ -77,7 +77,7 @@ I restarted the PCB design from scratch, this time avoiding 90 degree angles in 
   ]"
 />
 
-### Final Product
+## Final Product
 I ordered through JLCPCB and used their PCBA service. Shoutout to Hack Club for helping offset my costs.
 <Gallery 
   :images="[
@@ -96,11 +96,11 @@ I ordered through JLCPCB and used their PCBA service. Shoutout to Hack Club for 
   ]"
 />
 
-## Handmade Prototype
-WIP
-
 ## Reflection
 - I would like to add a small microcontroller to allow for some custom functionality for timed runs, similiar to https://www.vexforum.com/t/a-timing-competition-switch/102689
 - I had trouble finding large switches through the JLCPCB PCBA assembly service
 - Six-prong switches were slightly overkill but help ensure the switches wont snap off with use
 - This was designed for short 5" ethernet cables, which were ludicrously expensive regardless of where they were purchased.
+
+## Handmade Variant
+WIP
