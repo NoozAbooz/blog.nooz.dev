@@ -100,3 +100,23 @@ return { // [!code focus]
     msg: "Warning", // [!code warning]
 ...
 ```
+
+## Image Gallery
+Uses [@miletorix/vitepress-gallery](https://www.npmjs.com/package/@miletorix/vitepress-gallery)
+```
+<Gallery 
+  :images="[
+    'demo-1.png',
+    'demo-2.jpg',
+    'demo-3.jpg',
+    'demo-4.jpg'
+  ]" 
+  :captions="[
+    'Image caption Nr.1 ...',
+    'Image caption Nr.2 ...',
+    'Image caption Nr.3 ...',
+    'Image caption Nr.4 ...'
+  ]"
+/>
+```
+![image](https://cdn.hackclub.com/019d894a-52cc-7920-b75b-4e2552ddb794/paste-1776124841930.png)
