@@ -3,7 +3,7 @@ title: VEX Competition Switches
 date: 2025-01-01
 ---
 
-# Making my own VEX Competition Switch
+# Making a VEX Competition Switch
 ![image](https://cdn.hackclub.com/019d8988-a34a-7f86-a880-97ca295ad589/paste-1776128925837.png "CAD Render" =600x)
 <Card title="Github Repository" link="https://github.com/NoozAbooz/VEX-Competition-Switch" logo="https://logodix.com/logo/64439.png"/>
 
