@@ -38,13 +38,13 @@ To get a feel for the wiring, I designed a prototype in EasyEDA:
 	'https://github.com/NoozAbooz/VEX-Competition-Switch/raw/master/screenshots/image-2.png',
   ]" 
   :captions="[
-	'EasyEDA schematic for version 1 (solo edition). Though I did have to use both layers of the PCB as to not have overlapping traces, I purposely adding vias to make it less complex to debug.',
+	'EasyEDA schematic for version 1 (solo edition). Though I did have to use both layers of the PCB as to not have overlapping traces, I purposely added vias to make it less complex to debug.',
 	'3D model of the PCB, with the ethernet jack (facing up) and switches attached. This was meant to be nearly as wide as the ethernet port itself to be slim, and dangle off the cable connected to a controller.',
   ]"
 />
 
 ## Version 1.0 - Duo Port
-Knowing that I wanted to recreate the original switch as closely as possible, I designed a second version of the PCB that would support two controllers being connected simultaneously, with standardized holes as to accomodate mounting the PCB to a controller.
+Knowing that I wanted to recreate the original switch as closely as possible, I designed a second version of the PCB that would support two controllers being connected simultaneously, with standardized holes as to accommodate mounting the PCB to a controller.
 <Gallery 
   :images="[
 	'https://github.com/NoozAbooz/VEX-Competition-Switch/blob/master/screenshots/image-3.png?raw=true',
