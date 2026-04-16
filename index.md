@@ -2,7 +2,7 @@
 layout: home
 
 hero:
-  name: "Bibliotheca"
+  name: "Welcome!"
   tagline: "Next update soon™"
   actions:
     - theme: brand
