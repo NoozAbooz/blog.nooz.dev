@@ -17,11 +17,11 @@ hero:
 features:
   - icon: 🛠️
     title: Simple and minimal
-    details: in design only.
+    details: (just kidding)
   - icon: 📖
     title: Curated study resources
-    details: to procrastinate studying with.
+    details: to procrastinate studying with
   - icon: 🚧
     title: Always improving
-    details: in the wrong direction.
+    details: in the wrong direction
 ---
