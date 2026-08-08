@@ -103,4 +103,17 @@ I ordered through JLCPCB and used their PCBA service. Shoutout to Hack Club for 
 - This was designed for short 5" ethernet cables, which were ludicrously expensive regardless of where they were purchased.
 
 ## Handmade Variant
-WIP
+I was in a tough spot without access to my PCB variant, so I hand-soldered a simple budget switch. It only supports changing between auton/driver, and is set to always be enabled.
+
+<Gallery 
+  :images="[
+	'https://cdn.hackclub.com/019e1f7c-bd7e-7940-93c8-63cad74a8169/1778644572251.jpg',
+	'https://cdn.hackclub.com/019e1f7e-586a-71bd-8d61-97cc9dbc1143/1778644572248.jpg',
+	'https://cdn.hackclub.com/019e1f7f-dae4-711a-9fbc-881e15c6a412/1778644572239.jpg',
+  ]" 
+  :captions="[
+	'SPDT switch with a small plastic faceplate, soldered to a standard ethernet cable.',
+	'Solder connections on the switch, based on the PDF pinout.',
+	'I ripped the switch from a old project, so it is just hot glued to the faceplate',
+  ]"
+/>
